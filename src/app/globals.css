@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+/* ============================================
+   DESIGN SYSTEM — Portfolio Nicolás Barreto
+   Paleta: fondo oscuro profundo + acento cian eléctrico
+   ============================================ */
+
+@theme {
+  /* Colores del sistema */
+  --color-bg-primary: #0a0a0f;
+  --color-bg-secondary: #111118;
+  --color-bg-card: #16161e;
+  --color-bg-card-hover: #1e1e2a;
+  --color-border: #2a2a3a;
+  --color-border-hover: #3a3a5a;
+
+  /* Acento eléctrico — cian */
+  --color-accent: #00f0ff;
+  --color-accent-dim: #00b8c9;
+  --color-accent-glow: rgba(0, 240, 255, 0.15);
+  --color-accent-subtle: rgba(0, 240, 255, 0.06);
+
+  /* Acento secundario — violeta */
+  --color-accent2: #8b5cf6;
+  --color-accent2-dim: #7c3aed;
+
+  /* Texto */
+  --color-text-primary: #e4e4ef;
+  --color-text-secondary: #9ca3af;
+  --color-text-muted: #6b7280;
+
+  /* Fuentes */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent-dim) var(--color-bg-secondary);
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar personalizado para webkit */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-dim);
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg-primary);
+}
+
+/* ============================================
+   UTILIDADES PERSONALIZADAS
+   ============================================ */
+
+/* Glassmorphism para cards */
+.glass {
+  background: rgba(22, 22, 30, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+}
+
+/* Glow effect para bordes */
+.glow-border {
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+.glow-border:hover {
+  border-color: var(--color-accent);
+  box-shadow:
+    0 0 20px var(--color-accent-glow),
+    inset 0 0 20px var(--color-accent-subtle);
+}
+
+/* Gradiente de texto con acento */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Dot grid background pattern */
+.dot-grid {
+  background-image: radial-gradient(circle, var(--color-border) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Terminal look */
+.terminal {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  font-family: var(--font-mono);
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Typewriter cursor blink */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s infinite;
+}
+
+/* Animación de gradiente para el hero */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient-shift 4s ease infinite;
+}
+
+/* Línea de timeline */
+.timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-accent), var(--color-accent2), transparent);
+}
+
+/* Skill badge */
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+.skill-badge:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-subtle);
+  transform: translateY(-2px);
+}
+
+/* Sección divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-border),
+    var(--color-accent-dim),
+    var(--color-border),
+    transparent
+  );
+}
+
+/* Botón primario */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: var(--color-accent);
+  color: var(--color-bg-primary);
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+.btn-primary:hover {
+  box-shadow: 0 0 30px var(--color-accent-glow);
+  transform: translateY(-2px);
+}
+
+/* Botón outline */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+.btn-outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Responsive container */
+.container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
