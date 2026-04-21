@@ -111,7 +111,7 @@ export const SOCIAL_LINKS = {
 // Configuración de Email (Formspree)
 // ============================================
 // Reemplazá el string vacío por tu URL de Formspree cuando la tengas (ej: "https://formspree.io/f/xyzababc")
-export const FORMSPREE_URL = "";
+export const FORMSPREE_URL = "https://formspree.io/f/myklnera";
 
 // ============================================
 // GitHub API

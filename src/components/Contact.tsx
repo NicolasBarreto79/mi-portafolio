@@ -70,7 +70,7 @@ export default function Contact() {
     { icon: <GithubIcon size={20} />, label: "GitHub", href: SOCIAL_LINKS.github, user: "NicolasBarreto79" },
     { icon: <LinkedinIcon size={20} />, label: "LinkedIn", href: SOCIAL_LINKS.linkedin, user: "nicolas-barreto" },
     { icon: <InstagramIcon size={20} />, label: "Instagram", href: SOCIAL_LINKS.instagram, user: "@nicobarreto26" },
-    { icon: <Mail size={20} />, label: "Email", href: `mailto:${SOCIAL_LINKS.email}`, user: SOCIAL_LINKS.email },
+    { icon: <Mail size={20} />, label: "Email", href: `https://mail.google.com/mail/?view=cm&fs=1&to=${SOCIAL_LINKS.email}`, user: SOCIAL_LINKS.email },
   ];
 
   return (
