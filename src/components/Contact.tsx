@@ -108,7 +108,6 @@ export default function Contact() {
                       background: "var(--color-bg-card)",
                       border: errors.name ? "1px solid #f97583" : "1px solid var(--color-border)",
                       color: "var(--color-text-primary)",
-                      focusRingColor: "var(--color-accent)",
                     }}
                     aria-label="Tu nombre"
                   />
