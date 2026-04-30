@@ -22,11 +22,9 @@ export default function About() {
           <ScrollReveal direction="left">
             <div className="space-y-6">
               <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--color-text-primary)" }}>
-                Tengo 22 años y soy de Concepción del Uruguay, Entre Ríos, Argentina. Actualmente curso el cuarto año de la <strong style={{ color: "var(--color-accent)" }}>Licenciatura en Sistemas de Información</strong>, con orientación en desarrollo de software, bases de datos y análisis funcional.
+                Tengo 22 años y soy de Concepción del Uruguay, Entre Ríos, Argentina. Actualmente curso el cuarto año de la <strong style={{ color: "var(--color-accent)" }}>Licenciatura en Sistemas de Información</strong>.
               </p>
-              <p className="text-base md:text-lg leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
-                Consolido mis conocimientos a través de proyectos personales y cursos orientados al desarrollo real. Me interesa construir soluciones tecnológicas prácticas, con foco en la calidad del código, el modelado de datos y la eficiencia del sistema.
-              </p>
+
             </div>
           </ScrollReveal>
 

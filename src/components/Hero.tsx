@@ -111,12 +111,7 @@ export default function Hero() {
                   <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-24">Role:</span> <span className="text-[#c9d1d9]">Desarrollador de Software</span></div>
                   <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-24">Location:</span> <span className="text-[#c9d1d9]">Argentina 🇦🇷</span></div>
                   <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-24">Contact:</span> <span className="text-[#c9d1d9]">barretonicolas810@gmail.com</span></div>
-                  <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-24">Status:</span> <span className="text-[#3fb950]">Disponible para proyectos</span></div>
-                  <div className="mt-3 pt-3 border-t border-[#30363d] grid grid-cols-3 gap-2 text-center">
-                    <div><div className="text-[#3fb950] font-bold text-base">+9</div><div className="text-[#8b949e] text-xs">repos</div></div>
-                    <div><div className="text-[#3fb950] font-bold text-base">5</div><div className="text-[#8b949e] text-xs">lenguajes</div></div>
-                    <div><div className="text-[#3fb950] font-bold text-base">4to</div><div className="text-[#8b949e] text-xs">año Lic.</div></div>
-                  </div>
+                  <div className="flex gap-2"><span className="text-[#58a6ff] w-24">Status:</span> <span className="text-[#3fb950]">Disponible para proyectos</span></div>
                 </div>
                 <div className="mt-4 flex items-center">
                   <span className="text-[#3fb950] font-bold">➜</span> <span className="text-[#58a6ff] font-bold">~</span> <span className="animate-pulse w-2 h-4 bg-[#c9d1d9] ml-2 inline-block"></span>

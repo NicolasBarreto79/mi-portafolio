@@ -44,7 +44,7 @@ export const SKILLS: SkillCategory[] = [
       { name: "Next.js", icon: "", level: 75 },
       { name: "JavaScript", icon: "", level: 90 },
       { name: "TypeScript", icon: "", level: 75 },
-      { name: "HTML5 & CSS3", icon: "", level: 95 },
+      { name: "HTML & CSS", icon: "", level: 95 },
       { name: "Tailwind CSS", icon: "", level: 85 },
     ],
   },
