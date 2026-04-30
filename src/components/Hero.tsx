@@ -57,7 +57,7 @@ export default function Hero() {
             </motion.div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-4 leading-[1.1]">
-              Nicolás <span className="gradient-text animate-gradient">Barreto</span>
+              Nicolás <span className="gradient-text animate-gradient glitch-text" data-text="Barreto">Barreto</span>
             </h1>
 
             <div className="h-10 md:h-12 flex items-center mb-6">

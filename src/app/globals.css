@@ -154,6 +154,50 @@ body {
   animation: gradient-shift 4s ease infinite;
 }
 
+/* Efecto glitch para el nombre */
+@keyframes glitch-1 {
+  0%, 100% { clip-path: inset(0 0 98% 0); transform: translate(-3px, 0); }
+  20%       { clip-path: inset(30% 0 50% 0); transform: translate(3px, 0); }
+  40%       { clip-path: inset(70% 0 10% 0); transform: translate(-2px, 0); }
+  60%       { clip-path: inset(10% 0 80% 0); transform: translate(2px, 0); }
+  80%       { clip-path: inset(50% 0 30% 0); transform: translate(-3px, 0); }
+}
+@keyframes glitch-2 {
+  0%, 100% { clip-path: inset(95% 0 0 0); transform: translate(3px, 0); }
+  20%       { clip-path: inset(20% 0 60% 0); transform: translate(-3px, 0); }
+  40%       { clip-path: inset(60% 0 20% 0); transform: translate(2px, 0); }
+  60%       { clip-path: inset(5% 0 90% 0); transform: translate(-2px, 0); }
+  80%       { clip-path: inset(40% 0 45% 0); transform: translate(3px, 0); }
+}
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.glitch-text::before {
+  animation: glitch-1 4s infinite steps(1);
+  color: #60a5fa;
+  -webkit-text-fill-color: #60a5fa;
+  background: none;
+  opacity: 0.7;
+}
+.glitch-text::after {
+  animation: glitch-2 4s infinite steps(1);
+  color: #1d4ed8;
+  -webkit-text-fill-color: #1d4ed8;
+  background: none;
+  opacity: 0.7;
+}
+
 /* Línea de timeline */
 .timeline-line {
   position: absolute;
