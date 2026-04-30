@@ -56,9 +56,14 @@ export default function Hero() {
               Disponible para proyectos
             </motion.div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-4 leading-[1.1]">
-              Nicolás <span className="gradient-text animate-gradient glitch-text" data-text="Barreto">Barreto</span>
-            </h1>
+            <motion.h1 
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-4 leading-[1.1]"
+              initial={{ clipPath: "inset(0 100% 0 0)" }}
+              animate={{ clipPath: "inset(0 0% 0 0)" }}
+              transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+            >
+              Nicolás <span className="gradient-text animate-gradient">Barreto</span>
+            </motion.h1>
 
             <div className="h-10 md:h-12 flex items-center mb-6">
               <span className="text-lg md:text-xl font-mono" style={{ color: "var(--color-accent)" }}>
