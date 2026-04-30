@@ -66,8 +66,8 @@ export default function Hero() {
               </span>
             </div>
 
-            <p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: "var(--color-text-secondary)" }}>
-              Estoy cursando la Licenciatura en Sistemas de Información, consolidando mis conocimientos a través de proyectos personales y cursos orientados al desarrollo real. Busco construir soluciones tecnológicas prácticas, con foco en la calidad del código, el modelado de datos y el análisis funcional.
+            <p className="text-base md:text-lg leading-relaxed mb-8 font-mono" style={{ color: "var(--color-text-secondary)" }}>
+              Analista en Sistemas&nbsp;<span style={{ color: "var(--color-accent-dim)" }}>|</span>&nbsp;Futuro Licenciado en Sistemas&nbsp;<span style={{ color: "var(--color-accent-dim)" }}>|</span>&nbsp;Desarrollo de Software&nbsp;<span style={{ color: "var(--color-accent-dim)" }}>|</span>&nbsp;Bases de Datos
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
