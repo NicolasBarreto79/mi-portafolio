@@ -6,23 +6,23 @@
    ============================================ */
 
 @theme {
-  /* Colores del sistema */
-  --color-bg-primary: #0a0a0f;
-  --color-bg-secondary: #111118;
-  --color-bg-card: #16161e;
-  --color-bg-card-hover: #1e1e2a;
-  --color-border: #2a2a3a;
-  --color-border-hover: #3a3a5a;
+  /* Colores del sistema — fondo azul profundo */
+  --color-bg-primary: #060d1a;
+  --color-bg-secondary: #0a1525;
+  --color-bg-card: #0f1d30;
+  --color-bg-card-hover: #152540;
+  --color-border: #1a2d47;
+  --color-border-hover: #243d5e;
 
-  /* Acento principal — azul oscuro */
+  /* Acento principal — azul */
   --color-accent: #2563eb;
   --color-accent-dim: #1d4ed8;
-  --color-accent-glow: rgba(37, 99, 235, 0.25);
-  --color-accent-subtle: rgba(37, 99, 235, 0.08);
+  --color-accent-glow: rgba(37, 99, 235, 0.30);
+  --color-accent-subtle: rgba(37, 99, 235, 0.10);
 
-  /* Acento secundario — amarillo flúor */
-  --color-accent2: #faff00;
-  --color-accent2-dim: #d4e000;
+  /* Acento secundario — azul claro complementario */
+  --color-accent2: #60a5fa;
+  --color-accent2-dim: #3b82f6;
 
   /* Texto */
   --color-text-primary: #e4e4ef;
@@ -45,6 +45,10 @@ html {
 
 body {
   background-color: var(--color-bg-primary);
+  background-image:
+    radial-gradient(ellipse 70% 50% at 15% 10%, rgba(37, 99, 235, 0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 45% at 85% 85%, rgba(37, 99, 235, 0.09) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 35% at 50% 40%, rgba(96, 165, 250, 0.05) 0%, transparent 70%);
   color: var(--color-text-primary);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
