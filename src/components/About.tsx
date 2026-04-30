@@ -22,10 +22,10 @@ export default function About() {
           <ScrollReveal direction="left">
             <div className="space-y-6">
               <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--color-text-primary)" }}>
-                Soy de Argentina, Entre Ríos, Concepción del Uruguay. Soy <strong style={{ color: "var(--color-accent)" }}>Desarrollador de Software, Base de Datos, Gestión y Análisis Funcional</strong>.
+                Tengo 22 años y soy de Concepción del Uruguay, Entre Ríos, Argentina. Actualmente curso el cuarto año de la <strong style={{ color: "var(--color-accent)" }}>Licenciatura en Sistemas de Información</strong>, con orientación en desarrollo de software, bases de datos y análisis funcional.
               </p>
               <p className="text-base md:text-lg leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
-                Me apasiona el desarrollo de software y la resolución de problemas a través del código. Siempre busco aprender nuevas tecnologías, perfeccionar mis habilidades y construir soluciones tecnológicas eficientes, robustas y centradas en la experiencia del usuario.
+                Consolido mis conocimientos a través de proyectos personales y cursos orientados al desarrollo real. Me interesa construir soluciones tecnológicas prácticas, con foco en la calidad del código, el modelado de datos y la eficiencia del sistema.
               </p>
             </div>
           </ScrollReveal>

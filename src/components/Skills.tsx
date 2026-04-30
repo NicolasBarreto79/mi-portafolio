@@ -49,7 +49,7 @@ export default function Skills() {
                         color: "var(--color-text-primary)"
                       }}
                     >
-                      <span className="text-base">{skill.icon}</span>
+                      {skill.icon && <span className="text-base">{skill.icon}</span>}
                       <span>{skill.name}</span>
                     </motion.div>
                   ))}

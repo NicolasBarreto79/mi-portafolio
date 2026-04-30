@@ -66,8 +66,8 @@ export default function Hero() {
               </span>
             </div>
 
-            <p className="text-base md:text-lg max-w-lg mb-8 leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
-              Analista en Sistemas de 22 años, desde Argentina. Construyo soluciones tecnológicas con foco en la calidad, el detalle y la mejora continua. Actualmente cursando la Licenciatura en Sistemas de Información.
+            <p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: "var(--color-text-secondary)" }}>
+              Estoy cursando la Licenciatura en Sistemas de Información, consolidando mis conocimientos a través de proyectos personales y cursos orientados al desarrollo real. Busco construir soluciones tecnológicas prácticas, con foco en la calidad del código, el modelado de datos y el análisis funcional.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
@@ -108,10 +108,15 @@ export default function Hero() {
                 <div className="mt-2 text-[#8b949e]">Fetching profile data...</div>
                 <div className="mt-2 border border-[#30363d] p-4 rounded-md bg-[#161b22]/50">
                   <div className="text-[#f0f6fc] font-bold text-lg mb-2">Nicolás Barreto</div>
-                  <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-20">Role:</span> <span className="text-[#c9d1d9]">Fullstack Developer</span></div>
-                  <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-20">Location:</span> <span className="text-[#c9d1d9]">Argentina 🇦🇷</span></div>
-                  <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-20">Contact:</span> <span className="text-[#c9d1d9]">barretonicolas810@gmail.com</span></div>
-                  <div className="flex gap-2"><span className="text-[#58a6ff] w-20">Status:</span> <span className="text-[#3fb950]">Disponible para proyectos</span></div>
+                  <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-24">Role:</span> <span className="text-[#c9d1d9]">Desarrollador de Software</span></div>
+                  <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-24">Location:</span> <span className="text-[#c9d1d9]">Argentina 🇦🇷</span></div>
+                  <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-24">Contact:</span> <span className="text-[#c9d1d9]">barretonicolas810@gmail.com</span></div>
+                  <div className="flex gap-2 mb-1"><span className="text-[#58a6ff] w-24">Status:</span> <span className="text-[#3fb950]">Disponible para proyectos</span></div>
+                  <div className="mt-3 pt-3 border-t border-[#30363d] grid grid-cols-3 gap-2 text-center">
+                    <div><div className="text-[#3fb950] font-bold text-base">+9</div><div className="text-[#8b949e] text-xs">repos</div></div>
+                    <div><div className="text-[#3fb950] font-bold text-base">5</div><div className="text-[#8b949e] text-xs">lenguajes</div></div>
+                    <div><div className="text-[#3fb950] font-bold text-base">4to</div><div className="text-[#8b949e] text-xs">año Lic.</div></div>
+                  </div>
                 </div>
                 <div className="mt-4 flex items-center">
                   <span className="text-[#3fb950] font-bold">➜</span> <span className="text-[#58a6ff] font-bold">~</span> <span className="animate-pulse w-2 h-4 bg-[#c9d1d9] ml-2 inline-block"></span>
