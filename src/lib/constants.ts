@@ -18,8 +18,7 @@ export const NAV_ITEMS: NavItem[] = [
 export const TYPEWRITER_TITLES = [
   "Analista en Sistemas",
   "Futuro Lic. en Sistemas de Información",
-  "Backend Developer",
-  "Apasionado por la tecnología",
+  "Desarrollador de Software",
 ];
 
 // ============================================

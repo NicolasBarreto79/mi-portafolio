@@ -33,44 +33,25 @@ export default function Skills() {
                   {category.title}
                 </h3>
 
-                {/* Skills con barras de progreso */}
-                <div className="space-y-4">
+                {/* Skills renderizadas como etiquetas (tags) */}
+                <div className="flex flex-wrap gap-2.5">
                   {category.skills.map((skill, skillIdx) => (
-                    <div key={skill.name}>
-                      <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-sm flex items-center gap-2">
-                          <span>{skill.icon}</span>
-                          <span>{skill.name}</span>
-                        </span>
-                        <span
-                          className="text-xs font-mono"
-                          style={{ color: "var(--color-text-muted)" }}
-                        >
-                          {skill.level}%
-                        </span>
-                      </div>
-
-                      {/* Barra de progreso animada */}
-                      <div
-                        className="h-1.5 rounded-full overflow-hidden"
-                        style={{ background: "var(--color-bg-primary)" }}
-                      >
-                        <motion.div
-                          className="h-full rounded-full"
-                          style={{
-                            background: `linear-gradient(90deg, var(--color-accent), var(--color-accent2))`,
-                          }}
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          viewport={{ once: true }}
-                          transition={{
-                            duration: 1,
-                            delay: catIdx * 0.1 + skillIdx * 0.05,
-                            ease: "easeOut",
-                          }}
-                        />
-                      </div>
-                    </div>
+                    <motion.div 
+                      key={skill.name}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: catIdx * 0.1 + skillIdx * 0.05 }}
+                      className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-all hover:-translate-y-0.5 hover:shadow-md"
+                      style={{ 
+                        background: "var(--color-bg-primary)",
+                        border: "1px solid var(--color-border)",
+                        color: "var(--color-text-primary)"
+                      }}
+                    >
+                      <span className="text-base">{skill.icon}</span>
+                      <span>{skill.name}</span>
+                    </motion.div>
                   ))}
                 </div>
               </div>

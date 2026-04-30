@@ -7,7 +7,7 @@ import ScrollReveal from "./ScrollReveal";
 export default function About() {
   const infoItems = [
     { icon: <MapPin size={20} />, label: "Ubicación", value: "Concepción del Uruguay, Entre Ríos, Argentina" },
-    { icon: <Briefcase size={20} />, label: "Perfil", value: "Fullstack Developer" },
+    { icon: <Briefcase size={20} />, label: "Perfil", value: "Desarrollador de Software" },
     { icon: <Mail size={20} />, label: "Email", value: "barretonicolas810@gmail.com" },
     { icon: <Phone size={20} />, label: "Teléfono", value: "+54 9 3442 648399" },
   ];
@@ -22,7 +22,7 @@ export default function About() {
           <ScrollReveal direction="left">
             <div className="space-y-6">
               <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--color-text-primary)" }}>
-                Soy de Argentina, Entre Ríos, Concepción del Uruguay. Soy <strong style={{ color: "var(--color-accent)" }}>Fullstack Developer</strong>.
+                Soy de Argentina, Entre Ríos, Concepción del Uruguay. Soy <strong style={{ color: "var(--color-accent)" }}>Desarrollador de Software, Base de Datos, Gestión y Análisis Funcional</strong>.
               </p>
               <p className="text-base md:text-lg leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
                 Me apasiona el desarrollo de software y la resolución de problemas a través del código. Siempre busco aprender nuevas tecnologías, perfeccionar mis habilidades y construir soluciones tecnológicas eficientes, robustas y centradas en la experiencia del usuario.
