@@ -14,15 +14,15 @@
   --color-border: #2a2a3a;
   --color-border-hover: #3a3a5a;
 
-  /* Acento eléctrico — cian */
-  --color-accent: #00f0ff;
-  --color-accent-dim: #00b8c9;
-  --color-accent-glow: rgba(0, 240, 255, 0.15);
-  --color-accent-subtle: rgba(0, 240, 255, 0.06);
+  /* Acento principal — azul oscuro */
+  --color-accent: #2563eb;
+  --color-accent-dim: #1d4ed8;
+  --color-accent-glow: rgba(37, 99, 235, 0.25);
+  --color-accent-subtle: rgba(37, 99, 235, 0.08);
 
-  /* Acento secundario — violeta */
-  --color-accent2: #8b5cf6;
-  --color-accent2-dim: #7c3aed;
+  /* Acento secundario — amarillo flúor */
+  --color-accent2: #faff00;
+  --color-accent2-dim: #d4e000;
 
   /* Texto */
   --color-text-primary: #e4e4ef;
@@ -198,13 +198,14 @@ body {
   gap: 8px;
   padding: 12px 28px;
   background: var(--color-accent);
-  color: var(--color-bg-primary);
+  color: #ffffff;
   font-weight: 600;
   border-radius: 8px;
   transition: all 0.3s ease;
   font-size: 0.9rem;
 }
 .btn-primary:hover {
+  background: var(--color-accent-dim);
   box-shadow: 0 0 30px var(--color-accent-glow);
   transform: translateY(-2px);
 }
